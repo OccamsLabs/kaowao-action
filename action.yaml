@@ -1,15 +1,15 @@
 # https://help.github.com/en/articles/metadata-syntax-for-github-actions
 
 name: 'kaowao scanner'
-description: 'scans for file modifications and alerts'
-author: 'OccamsLabs'
+description: 'scans for file modifications and alerts uppon changes'
+author: '@OccamsLabs'
 
 branding:
   icon: 'shield'
   color: 'blue'
 
 inputs:
-    args:
+  args:
     description: 'Arguments for kaowao'
     required: true
     default: '-h'

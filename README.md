@@ -4,9 +4,9 @@ This action monitors files for changes and will break the build if this happens
 
 ## Inputs
 
-## `args``
-
+## `args`
 **Required** cli arguments for the scanner
+example:
 `scan config.yaml`
 
 
