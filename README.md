@@ -11,11 +11,11 @@ example:
 
 
 
-
 ## Example usage
 
-TODO: proper docs
-
-uses: actions/hello-world-docker-action@v2
-with:
-  who-to-greet: 'Mona the Octocat'
+```
+- name: kaowao-scan
+  uses: OccamsLabs/kaowao-action@v0.0.2
+  with:
+    args: scan kaowao.yml
+```
