@@ -1,6 +1,13 @@
-# action.yml
+# https://help.github.com/en/articles/metadata-syntax-for-github-actions
+
 name: 'kaowao scanner'
 description: 'scans for file modifications and alerts'
+author: 'OccamsLabs'
+
+branding:
+  icon: 'shield'
+  color: 'blue'
+
 inputs:
     args:
     description: 'Arguments for kaowao'
@@ -9,11 +16,8 @@ inputs:
 
 runs:
   using: 'docker'
-  image: "docker://OccamsLabs/kaowao:latest"
+  image: "docker://ghcr.io/occamslabs/kaowao:latest"
   args:
     - ${{ inputs.args }}
 
 
-branding:
-  icon: 'shield'
-  color: 'blue'
